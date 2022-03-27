@@ -1,0 +1,68 @@
+/*font-family: 'Black Han Sans', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Serif KR', serif;*/
+
+:root{
+    --hi-font-han : 'Black Han Sans', sans-serif;
+    --hi-font: 'Nanum Gothic', sans-serif;
+    --hi-font-em: 'Noto Serif KR', serif;
+    --hi-active: #01eae6;
+
+}
+
+body{
+    font-family: var(--hi-font);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 2;
+}
+li{ list-style: 0;}
+a{ color:var(--hi-active); text-decoration: none;}
+
+/* 공공크래스 */
+
+/* 접근성 */
+.hidden{
+    position: absolute; width: 0; height: 0; overflow: hidden;
+    visibility: hidden; opacity: 0;
+}
+button#top.top{
+    position: fixed;
+    background-color: black;
+    color: rgb(255, 251, 251);
+    right: 10px;
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+}
+ul#quick{     
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 25px;
+}
+ul#quick>li{ 
+    width: 120px; 
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 0;
+    transition: 0.5s; 
+}
+ul#quick a{color: white;}
+ul#quick li.yb{ background-color: rgb(238, 14, 14);}
+ul#quick li.tw{ background-color: #29a4d9;}
+ul#quick li.fb{ background-color: #385498;}
+ul#quick li.ig{ 
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+
+ul#quick>li>a>i{display: inline-block; width:25px; text-align: center;}
+ul#quick>li:hover{ margin-left: -75px}
+
